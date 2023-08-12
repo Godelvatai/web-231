@@ -2,5 +2,5 @@
 
 ## Contributors
 
-..* Dustin Craven
-..* Robert Kumar
+* Dustin Craven
+* Robert Kumar
