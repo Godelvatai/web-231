@@ -25,3 +25,8 @@ a:hover {
 a:visited {
     color: #3C275A;
 }
+
+body.exercise-content {
+    margin: 0;
+    padding: 0 5px;
+}
