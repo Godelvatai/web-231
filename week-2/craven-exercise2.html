@@ -10,21 +10,40 @@
         <meta name="author" content="Dustin Craven">
         <meta charset="utf-8">
     </head>
-    <body class="exercise-content">
+    <body>
         <!--CSS file and other links-->
         <link rel="stylesheet" type="text/css" href="../global.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <main>
-            <h1>Exercise 2.2 - Hello JavaScript</h1>
-            <div class="exercise-content">
+        <main id="container">
+            <!--Webpage Header-->
+            <h1 class="app-header">Exercise 2.2 - Hello JavaScript</h1>
+            <div>
+                <!--Button with alert message-->
                 <button id="btnMyCourse" onclick="alert('WEB 231 - Enterprise JavaScript I')">What course am I taking?</button>
+                
+                <!--paragraph with name-->
                 <p id="txtMyWorld">Some Text Here</p>
+
+                <!--Return to course home page-->
                 <a class="return-home" href="../index.html">Return</a>
             </div>
         </main>
-        <script src="my-world.js"></script>
+        <script type="text/JavaScript">
+          /*
+          ============================================
+          ; Title:  my-world.js
+          ; Author: Dustin Craven
+          ; Date:   16 August 2023
+          ; Description: Set innerHTML of #txtMyWorld paragraph to specific text
+          ;===========================================
+          */
+
+          //Set name to variable and then assign that with additional text to txtMyWorld id
+          let fullName = 'Dustin Craven';
+          document.getElementById("txtMyWorld").innerHTML = "You are now in " + fullName + "\'s world!";
+        </script>
     </body>
 </html>
