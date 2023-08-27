@@ -1,0 +1,101 @@
+c
+        <!--CSS file and other links-->
+        <link rel="stylesheet" type="text/css" href="../site.css">
+        <link rel="stylesheet" type="text/css" href="../global.css">
+        <link rel="stylesheet" type="text/css" href="craven-payroll.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <main id="container">
+            <!--Header for Webpage-->
+            <h1 id="payroll-header">Payroll System</h1>
+            
+            <!--Employee Record-->
+            <h3>Employee record 1</h3>
+            <ul class="employee-details">
+                <li id="txtFirstNameEmployee1"></li>
+                <li id="txtLastNameEmployee1"></li>
+                <li id="txtAddressEmployee1"></li>
+                <li id="txtHireDateEmployee1"></li>
+                <li id="txtPayRateEmployee1"></li>
+            </ul>
+
+            <!--Employee Record-->
+            <h3>Employee record 2</h3>
+            <ul class="employee-details">
+                <li id="txtFirstNameEmployee2"></li>
+                <li id="txtLastNameEmployee2"></li>
+                <li id="txtAddressEmployee2"></li>
+                <li id="txtHireDateEmployee2"></li>
+                <li id="txtPayRateEmployee2"></li>
+            </ul>
+
+            <!--Employee Record-->
+            <h3>Employee record 3</h3>
+            <ul class="employee-details">
+                <li id="txtFirstNameEmployee3"></li>
+                <li id="txtLastNameEmployee3"></li>
+                <li id="txtAddressEmployee3"></li>
+                <li id="txtHireDateEmployee3"></li>
+                <li id="txtPayRateEmployee3"></li>
+            </ul>
+
+            <!--Return to course home page-->
+            <a class="return-home" href="../index.html">Return</a>
+        </main>
+        <script type="text/JavaScript">
+          /*
+          ============================================
+          ; Title:  payroll.js
+          ; Author: Dustin Craven
+          ; Date:   17 August 2023
+          ; Description: Use variables with employee information to assign the values into unordered lists
+          ;===========================================
+          */
+
+          //Employee 1 variables
+          let firstNameEmployee1 = "Employee";
+          let lastNameEmployee1 = "Number One";
+          let addressEmployee1 = "123 Address Rd, City, State ZipCode";
+          let hireDateEmployee1 = new Date().toLocaleDateString("en-US");
+          let payRateEmployee1 = 15.0.toFixed(1);
+
+          //Employee 2 variables
+          let firstNameEmployee2 = "Employee";
+          let lastNameEmployee2 = "Number Two";
+          let addressEmployee2 = "456 Address Circle, City, State ZipCode";
+          let hireDateEmployee2 = new Date().toLocaleDateString("en-US");
+          let payRateEmployee2 = 24.56.toFixed(1);
+
+          //Employee 3 variables
+          let firstNameEmployee3 = "Employee";
+          let lastNameEmployee3 = "Number Three";
+          let addressEmployee3 = "789 Address Lane, City, State ZipCode";
+          let hireDateEmployee3 = new Date().toLocaleDateString("en-US");
+          let payRateEmployee3 = 57.123.toFixed(1);
+
+          //Assign variables to html: Employee1
+          document.getElementById("txtFirstNameEmployee1").innerHTML = firstNameEmployee1;
+          document.getElementById("txtLastNameEmployee1").innerHTML = lastNameEmployee1;
+          document.getElementById("txtAddressEmployee1").innerHTML = addressEmployee1;
+          document.getElementById("txtHireDateEmployee1").innerHTML = hireDateEmployee1;
+          document.getElementById("txtPayRateEmployee1").innerHTML = payRateEmployee1;
+
+          //Assign variables to html: Employee2
+          document.getElementById("txtFirstNameEmployee2").innerHTML = firstNameEmployee2;
+          document.getElementById("txtLastNameEmployee2").innerHTML = lastNameEmployee2;
+          document.getElementById("txtAddressEmployee2").innerHTML = addressEmployee2;
+          document.getElementById("txtHireDateEmployee2").innerHTML = hireDateEmployee2;
+          document.getElementById("txtPayRateEmployee2").innerHTML = payRateEmployee2;
+
+          //Assign variables to html: Employee3
+          document.getElementById("txtFirstNameEmployee3").innerHTML = firstNameEmployee3;
+          document.getElementById("txtLastNameEmployee3").innerHTML = lastNameEmployee3;
+          document.getElementById("txtAddressEmployee3").innerHTML = addressEmployee3;
+          document.getElementById("txtHireDateEmployee3").innerHTML = hireDateEmployee3;
+          document.getElementById("txtPayRateEmployee3").innerHTML = payRateEmployee3;
+
+        </script>
+    </body>
+</html>

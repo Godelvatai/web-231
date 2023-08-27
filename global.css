@@ -2,22 +2,9 @@
     padding: 10px;
 }
 
-#card {
-    width: 600px;
-    margin: 3% auto 0;
-}
-
-#form {
-    width: 600px;
-    margin: 3% auto 0;
-}
-
-#form-results {
-    width: 600px;
-    margin: 3% auto 0;
-}
-
 .card {
+    width: 600px;
+    margin: 3% auto 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
     transition: .3s;
 }
@@ -35,6 +22,22 @@
 
 .card-content {
     padding: 2px 16px;
+}
+
+.form {
+    width: 600px;
+    margin: 3% auto 0;
+    display: inline-grid;
+    grid-template-columns: auto;
+}
+
+.form-field {
+    padding: 20px;
+}
+
+.form-results {
+    width: 600px;
+    margin: 3% auto 0;
 }
 
 .btn {
@@ -70,15 +73,6 @@
 
 .full-width {
     width: 100%;
-}
-
-.form {
-    display: inline-grid;
-    grid-template-columns: auto;
-}
-
-.form-field {
-    padding: 20px;
 }
 
 .return-home {

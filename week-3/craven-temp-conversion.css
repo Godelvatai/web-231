@@ -1,0 +1,13 @@
+.app-header {
+    text-align: center;
+}
+
+#conversion-result {
+    text-align: center;
+    font-size: 28px;
+}
+
+.return-container {
+    width: 600px;
+    margin: 3% auto 0;
+}
