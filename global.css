@@ -29,7 +29,7 @@ body {
 }
 
 .form {
-    width: 600px;
+    width: 100%;
     margin: 3% auto 0;
     display: inline-grid;
     grid-template-columns: auto;
@@ -40,7 +40,7 @@ body {
 }
 
 .form-results {
-    width: 600px;
+    width: 100%;
     margin: 3% auto 0;
 }
 
@@ -65,6 +65,15 @@ body {
     box-sizing: border-box;
 }
 
+.drop-down-menu {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .btn-primary {
     background-color: #4f3674;
     color: #fff;
@@ -77,6 +86,11 @@ body {
 
 .full-width {
     width: 100%;
+}
+
+.return-container {
+    width: 600px;
+    margin: 3% auto 0;
 }
 
 .return-home {
