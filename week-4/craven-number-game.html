@@ -19,19 +19,60 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
         <main id="container">
-            
+            <h1 class="app-header">Welcome to the numbers game!</h1>
+
+            <div class="card">
+                <div class="card-title">Pick a number between 1 and 10</div>
+                <div class="card-content">
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="txtMyNumber">Guess the number:</label>
+                            <input type="text" class="input" id="txtMyNumber" name="txtMyNumber">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <button id="btnSubmit" class="btn btn-primary full-width">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Results</div>
+                <div class="card-content guess-result" id="mynumber-result"></div>
+            </div>
         </main>
         <script>
           /*
           ============================================
-          ; Title:  
+          ; Title:  NumberGuessing.js
           ; Author: Dustin Craven
-          ; Date:   
-          ; Description: 
+          ; Date:   8/30/2023
+          ; Description: Number Guessing Game between 1 and 10
           ;===========================================
           */
+          const rnd = Math.floor((Math.random() * 10) + 1); //Generate random number 1-10
+          console.log(rnd);
+          
+          document.getElementById("btnSubmit").onclick = function() {
+            //Save text input from textbox form field to variable declared with name myNumber
+            let myNumber = document.getElementById("txtMyNumber").value;
 
-          //Set name to variable and then assign that with additional text to txtMyWorld id
+            if(myNumber) {
+                console.log(myNumber);
+                //Compare input to random number
+                if(myNumber == rnd){
+                    document.getElementById("mynumber-result").innerHTML = "Congratulations! You picked the correct number!";
+                } else if(myNumber > rnd) {
+                    document.getElementById("mynumber-result").innerHTML = "The number is less than " + myNumber;
+                } else if(myNumber < rnd) {
+                    document.getElementById("mynumber-result").innerHTML = "The number is more than " + myNumber;
+                }
+            }
+            //Testing case to output undefined variable value to console
+            else{
+                console.log("Variable myNumber is Undefined");
+            }
+          }
         </script>
     </body>
 </html>
