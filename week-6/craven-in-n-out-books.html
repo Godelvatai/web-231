@@ -12,26 +12,152 @@
     </head>
     <body>
         <!--CSS file and other links-->
-        <link rel="stylesheet" type="text/css" href="../global.css">
-        <link rel="stylesheet" type="text/css" href="craven-in-n-out-books.css">
+        <link rel="stylesheet" type="text/css" href="global.css">
+        <link rel="stylesheet" type="text/css" href="assignment6.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
         <main id="container">
-            
+            <h1 class="app-header">Welcome to In-N-Out-Books</h1>
+
+            <div class="card">
+                <div class="card-title">My Favorites</div>
+                <div class="card-content">
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="favoriteList">Choose a listing:</label>
+                            <select id="favoriteList" class="drop-down-menu">
+                                <option value="select">--Select--</option>
+                                <option value="books">Top 3 Favorite Books</option>
+                                <option value="authors">Top 3 Favorite Authors</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <button id="btnDisplayListing" class="btn btn-primary full-width">Display Listing</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="favorite-books">
+                <div class="card-title">Top 3 Favorite Books</div>
+                <div class="card-content">
+                    <table id="book-table">
+                        <tbody id="book-table-body">
+                            <tr>
+                                <th>ISBN</th>
+                                <th>Title</th>
+                                <th>Pages</th>
+                            </tr>
+                            <tr>
+                                <td id="txBook1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <a href="">Return</a>
         </main>
         <script>
           /*
           ============================================
-          ; Title:  
+          ; Title:  In n Out Books
           ; Author: Dustin Craven
-          ; Date:   
+          ; Date:   9/17/2023
           ; Description: 
           ;===========================================
           */
+          let book1 = {
+            isbn: 456,
+            title: "Book",
+            pages: 300
+          }
+          
+          let book2 = {
+            isbn: 789,
+            title: "BOOK",
+            pages: 100
+          }
 
-          //Set name to variable and then assign that with additional text to txtMyWorld id
+          let book3 = {
+            isbn: 123,
+            title: "OOOO",
+            pages: 800
+          }
+
+          let auth1 = {
+            name: "",
+            genre: ""
+          }
+
+          let auth2 = {
+            name: "",
+            genre: ""
+          }
+
+          document.getElementById("txtBook1-isbn").innerHTML = book1.isbn;
+          document.getElementById("txtBook1-title").innerHTML = book1.title;
+          document.getElementById("txtBook1-pages").innerHTML = book1.pages;
+
+          document.getElementById("txtBook2-isbn").innerHTML = book2.isbn;
+          document.getElementById("txtBook2-title").innerHTML = book2.title;
+          document.getElementById("txtBook2-pages").innerHTML = book2.pages;
+
+          document.getElementById("txtBook3-isbn").innerHTML = book3.isbn;
+          document.getElementById("txtBook3-title").innerHTML = book3.title;
+          document.getElementById("txtBook3-pages").innerHTML = book3.pages;
+
+          document.getElementById("txtAuth1").innerHTML = book1.isbn;
+          document.getElementById("txtAuth1").innerHTML = book1.isbn;
+
+          document.getElementById("txtAuth1").innerHTML = book1.isbn;
+          document.getElementById("txtAuth1").innerHTML = book1.isbn;
+
+          document.getElementById("txtAuth1").innerHTML = book1.isbn;
+          document.getElementById("txtAuth1").innerHTML = book1.isbn;
+
+
+
+
+
+
+
+
+
+          let bookList = [book1,book2,book3];
+
+          let bookTableHTML = "";
+
+          for(let i = 0; i < bookList.length; i++){
+            bookTableHTML = bookTableHTML + "<tr><td>" + bookList[i].isbn + "</td><td>" + bookList[i].title + "</td><td>" + bookList[i].pages + "</td></tr>";
+          }
+
+          document.getElementById("book-table-body").innerHTML = document.getElementById("book-table-body").innerHTML + bookTableHTML;
+
+
+
+
+
+
+
+
+
+
+
+          
+          let books = document.getElementById("favorite-books");
+
+          books.style.display = "none";
+
+
+          document.getElementById("btnDisplayListing").onclick = function() {
+            let choice = document.getElementById("favoriteList").value;
+
+            
+          }
         </script>
     </body>
 </html>

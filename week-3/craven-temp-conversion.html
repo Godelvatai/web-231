@@ -30,6 +30,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-title">Conversion Results</div>
                 <div class="card-content" id="conversion-result"></div>
@@ -54,7 +55,7 @@
           document.getElementById("btn").onclick = function(){
             let fahrenheit = document.getElementById("txtFahrenheit").value;
 
-            let celsius = (parseFloat(fahrenheit) - 32 / 1.8).toFixed(2);
+            let celsius = ((parseFloat(fahrenheit) - 32) / 1.8).toFixed(2);
 
             document.getElementById("conversion-result").innerHTML = celsius;
           }
