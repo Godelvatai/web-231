@@ -3,4 +3,4 @@
 ## Contributors
 
 * Dustin Craven
-* Robert Kumar
+* Richard Krasso
