@@ -35,8 +35,10 @@ function zeroTheRegister() {
 
 // Function to run the cash register
 function runTheRegister() {
+   //Empty the Register before starting a calculation
    zeroTheRegister();
 
+   //Try catch for if the bill is larger than the cash entered (negative number would be produced).
    try {
     let changeValue = cashBox.value - billBox.value;  // calculate the change
 
